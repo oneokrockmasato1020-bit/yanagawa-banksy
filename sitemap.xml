@@ -1,38 +1,38 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
-    <loc>https://yanagawa-banksy.jp/</loc>
+    <loc>https://oneokrockmasato1020-bit.github.io/yanagawa-banksy/</loc>
     <lastmod>2026-05-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <image:image>
-      <image:loc>https://yanagawa-banksy.jp/og-image.jpg</image:loc>
+      <image:loc>https://oneokrockmasato1020-bit.github.io/yanagawa-banksy/og-image.jpg</image:loc>
       <image:title>YANAGAWA BANKSY - 柳川ナイトラウンジ</image:title>
     </image:image>
   </url>
   <url>
-    <loc>https://yanagawa-banksy.jp/#about</loc>
+    <loc>https://oneokrockmasato1020-bit.github.io/yanagawa-banksy/#about</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://yanagawa-banksy.jp/#cast</loc>
+    <loc>https://oneokrockmasato1020-bit.github.io/yanagawa-banksy/#cast</loc>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://yanagawa-banksy.jp/#system</loc>
+    <loc>https://oneokrockmasato1020-bit.github.io/yanagawa-banksy/#system</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://yanagawa-banksy.jp/#faq</loc>
+    <loc>https://oneokrockmasato1020-bit.github.io/yanagawa-banksy/#faq</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://yanagawa-banksy.jp/#access</loc>
+    <loc>https://oneokrockmasato1020-bit.github.io/yanagawa-banksy/#access</loc>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
   </url>

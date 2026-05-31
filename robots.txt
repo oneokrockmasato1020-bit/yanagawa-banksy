@@ -1,4 +1,4 @@
-User-agent: *
+﻿User-agent: *
 Allow: /
 
 # AI 検索エンジン向け
@@ -26,4 +26,4 @@ Allow: /
 User-agent: Bingbot
 Allow: /
 
-Sitemap: https://yanagawa-banksy.jp/sitemap.xml
+Sitemap: https://oneokrockmasato1020-bit.github.io/yanagawa-banksy/sitemap.xml
