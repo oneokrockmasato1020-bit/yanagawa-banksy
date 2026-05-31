@@ -2294,6 +2294,40 @@ body::before {
 .recruit-lead {
   margin-bottom: 28px !important;
 }
+
+/* RECRUIT 動画 */
+.recruit-video {
+  position: relative;
+  margin: 0 auto 32px;
+  max-width: 720px;
+  overflow: hidden;
+  border: 1px solid rgba(201,169,106,0.3);
+  background: #000;
+  box-shadow:
+    0 8px 24px rgba(0,0,0,0.5),
+    0 24px 64px rgba(255,31,122,0.15),
+    0 0 0 1px rgba(255,255,255,0.05) inset;
+}
+.recruit-video::before,
+.recruit-video::after {
+  content: "";
+  position: absolute;
+  width: 18px; height: 18px;
+  border: 1px solid var(--gold);
+  z-index: 2;
+  pointer-events: none;
+}
+.recruit-video::before { top: 8px; left: 8px; border-right: none; border-bottom: none; }
+.recruit-video::after  { bottom: 8px; right: 8px; border-left: none; border-top: none; }
+.recruit-video video {
+  width: 100%;
+  height: auto;
+  display: block;
+  background: #000;
+}
+@media (max-width: 720px) {
+  .recruit-video { margin-bottom: 24px; }
+}
 .recruit-lead strong {
   color: var(--gold-2);
   font-weight: 600;
