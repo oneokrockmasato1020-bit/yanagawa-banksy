@@ -4400,7 +4400,7 @@ html.is-live .site-header { top: 48px !important; }
   padding: 0;
   margin: 22px 0;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   gap: 8px;
   max-width: 480px;
 }
@@ -4437,6 +4437,32 @@ html.is-live .site-header { top: 48px !important; }
 }
 @media (max-width: 720px) {
   .access-distance { grid-template-columns: 1fr; }
+}
+/* 駅徒歩20秒を大きく強調 */
+.access-distance li.hero-access {
+  padding: 22px 26px;
+  background: linear-gradient(135deg, rgba(255,31,122,0.18), rgba(201,169,106,0.12));
+  border-left: 3px solid var(--pink);
+  position: relative;
+}
+.access-distance li.hero-access span {
+  font-family: var(--font-mincho);
+  font-size: 18px;
+  font-weight: 600;
+  color: #fff;
+  letter-spacing: 0.12em;
+}
+.access-distance li.hero-access em {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-weight: 700;
+  font-size: 22px;
+  letter-spacing: 0.1em;
+  background: linear-gradient(135deg, #fff 0%, var(--gold-2) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
 }
 
 /* =========================================================
