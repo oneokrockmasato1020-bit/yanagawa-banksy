@@ -2503,6 +2503,30 @@ body {
 }
 
 /* =========================================================
+   sr-extra: h2 内の SEOキーワードサブタイトル
+   ========================================================= */
+.sr-extra {
+  display: block;
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 11px;
+  font-weight: 400;
+  letter-spacing: 0.3em;
+  margin-top: 14px;
+  opacity: 0.5;
+  background: var(--gold-grad);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+.section.dark .sr-extra {
+  color: var(--gold);
+  -webkit-text-fill-color: var(--gold);
+  background: none;
+}
+
+/* =========================================================
    フォーカス可視化（キーボード操作のアクセシビリティ）
    ========================================================= */
 *:focus { outline: none; }
