@@ -342,12 +342,25 @@
       document.body.style.overflow = "";
     }
 
-    // ギャラリー付きカードにクリック
+    // ギャラリー付きカードにクリック＋キーボード対応
     document.querySelectorAll(".cast-card.has-gallery").forEach((card) => {
+      // アクセシビリティ: button相当の操作性
+      card.setAttribute("role", "button");
+      card.setAttribute("tabindex", "0");
+      card.setAttribute("aria-haspopup", "dialog");
+      card.setAttribute("aria-label", (card.dataset.name || "キャスト") + " のフォトギャラリーを開く");
+      card.style.cursor = "pointer";
+
       card.addEventListener("click", (e) => {
-        // figcaption内のリンクなどはスルー
         if (e.target.closest("a")) return;
         openModal(card);
+      });
+      card.addEventListener("keydown", (e) => {
+        if (e.key === "Enter" || e.key === " ") {
+          if (e.target.closest("a")) return;
+          e.preventDefault();
+          openModal(card);
+        }
       });
     });
 
