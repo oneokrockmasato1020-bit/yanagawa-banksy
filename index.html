@@ -156,6 +156,178 @@
   }
   </script>
 
+  <!-- ===== JSON-LD: Menu（料金メニュー）===== -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Menu",
+    "@id": "https://oneokrockmasato1020-bit.github.io/yanagawa-banksy/#menu",
+    "name": "YANAGAWA BANKSY 料金メニュー",
+    "inLanguage": "ja-JP",
+    "hasMenuSection": [
+      {
+        "@type": "MenuSection",
+        "name": "セット料金（飲み放題込み）",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "MEN セット 60分",
+            "description": "飲み放題込み（カクテル・焼酎・サワー・ソフトドリンク）",
+            "offers": { "@type": "Offer", "price": "2900", "priceCurrency": "JPY" }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "LADY セット 60分",
+            "description": "飲み放題込み（カクテル・焼酎・サワー・ソフトドリンク）",
+            "offers": { "@type": "Offer", "price": "2000", "priceCurrency": "JPY" }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "延長 30分",
+            "offers": { "@type": "Offer", "price": "1500", "priceCurrency": "JPY" }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "オプション",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "指名（推し）",
+            "offers": { "@type": "Offer", "price": "1000", "priceCurrency": "JPY" }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "ビール・ハイボール 飲み放題 追加",
+            "offers": { "@type": "Offer", "price": "1000", "priceCurrency": "JPY" }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "カラオケ 1曲",
+            "offers": { "@type": "Offer", "price": "200", "priceCurrency": "JPY" }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "キャストドリンク",
+            "offers": { "@type": "Offer", "price": "1000", "priceCurrency": "JPY", "priceSpecification": { "@type": "UnitPriceSpecification", "minPrice": "1000", "priceCurrency": "JPY" } }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "シャンパン",
+            "offers": { "@type": "Offer", "price": "10000", "priceCurrency": "JPY" }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "シャンパンタワー",
+            "description": "事前予約制・要相談",
+            "offers": { "@type": "Offer", "availability": "https://schema.org/PreOrder", "priceCurrency": "JPY" }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+
+  <!-- ===== JSON-LD: Event（2周年記念）===== -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Event",
+    "name": "YANAGAWA BANKSY 2周年記念イベント",
+    "description": "柳川駅徒歩20秒の新感覚MIX BAR、2周年を記念した特別イベント。詳細近日公開。",
+    "startDate": "2026-08-01",
+    "endDate": "2026-08-31",
+    "eventStatus": "https://schema.org/EventScheduled",
+    "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+    "location": {
+      "@type": "Place",
+      "name": "YANAGAWA BANKSY",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "三橋町24-3 1階",
+        "addressLocality": "柳川市",
+        "addressRegion": "福岡県",
+        "postalCode": "832-0814",
+        "addressCountry": "JP"
+      }
+    },
+    "organizer": { "@id": "https://oneokrockmasato1020-bit.github.io/yanagawa-banksy/#business" },
+    "image": "https://oneokrockmasato1020-bit.github.io/yanagawa-banksy/og-image.jpg"
+  }
+  </script>
+
+  <!-- ===== JSON-LD: ItemList（曜日イベント）===== -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "name": "YANAGAWA BANKSY 曜日別イベント",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "月曜：生ビール・ハイボール 飲み放題（追加料金なし）" },
+      { "@type": "ListItem", "position": 2, "name": "火曜：カラオケ 無料（1曲¥200が無料）" },
+      { "@type": "ListItem", "position": 3, "name": "木曜：23時までのご来店で ¥1,000 OFF" },
+      { "@type": "ListItem", "position": 4, "name": "日曜：最初の1セットが 80分（通常60分）" }
+    ]
+  }
+  </script>
+
+  <!-- ===== JSON-LD: Person（マネージャー：ゆつき）===== -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "@id": "https://oneokrockmasato1020-bit.github.io/yanagawa-banksy/#person-yutsuki",
+    "name": "ゆつき",
+    "alternateName": "YUTSUKI",
+    "jobTitle": "マネージャー",
+    "worksFor": { "@id": "https://oneokrockmasato1020-bit.github.io/yanagawa-banksy/#business" },
+    "description": "YANAGAWA BANKSY のマネージャー。「夜の柳川を私が盛り上げます！」",
+    "image": "https://oneokrockmasato1020-bit.github.io/yanagawa-banksy/images/cast/yutsuki.jpg"
+  }
+  </script>
+
+  <!-- ===== JSON-LD: HowTo（リモートギフトの手順）===== -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    "name": "推しキャストにドリンク・シャンパンをリモートでプレゼントする方法",
+    "description": "BASE 公式オンラインショップから、お気に入りのキャストにドリンクやシャンパンをリモートでプレゼントする手順。",
+    "image": "https://oneokrockmasato1020-bit.github.io/yanagawa-banksy/og-image.jpg",
+    "totalTime": "PT3M",
+    "supply": [{ "@type": "HowToSupply", "name": "スマートフォン or PC" }],
+    "tool": [{ "@type": "HowToTool", "name": "BASE 公式ショップ" }],
+    "step": [
+      {
+        "@type": "HowToStep",
+        "position": 1,
+        "name": "BASE ショップへアクセス",
+        "text": "公式オンラインショップ banksybanksy.base.shop にアクセス",
+        "url": "https://banksybanksy.base.shop/"
+      },
+      {
+        "@type": "HowToStep",
+        "position": 2,
+        "name": "ギフトを選ぶ",
+        "text": "ドリンク・シャンパン・お好きな商品を選択してカートに追加"
+      },
+      {
+        "@type": "HowToStep",
+        "position": 3,
+        "name": "指名キャスト名を備考に記入",
+        "text": "ご注文時の備考欄に「指名キャスト名」を記入して購入完了"
+      },
+      {
+        "@type": "HowToStep",
+        "position": 4,
+        "name": "キャストへ届く",
+        "text": "お店経由で、指定したキャストへ直接プレゼントが届きます"
+      }
+    ]
+  }
+  </script>
+
   <!-- ===== JSON-LD: FAQPage (AI検索引用ターゲット) ===== -->
   <script type="application/ld+json">
   {
