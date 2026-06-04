@@ -2502,6 +2502,32 @@ body {
   color: #fff;
 }
 
+/* =========================================================
+   フォーカス可視化（キーボード操作のアクセシビリティ）
+   ========================================================= */
+*:focus { outline: none; }
+*:focus-visible {
+  outline: 2px solid var(--gold);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+a:focus-visible,
+button:focus-visible,
+.btn:focus-visible,
+.faq-item summary:focus-visible {
+  outline: 2px solid var(--gold-2);
+  outline-offset: 4px;
+  box-shadow:
+    0 0 0 4px rgba(201,169,106,0.2),
+    0 0 24px rgba(255,31,122,0.3);
+}
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+  outline: 2px solid var(--pink);
+  outline-offset: 2px;
+}
+
 /* ABOUT 観光客向け一文 */
 .about-tourist {
   margin-top: 18px;
