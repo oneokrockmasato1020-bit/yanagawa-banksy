@@ -414,6 +414,16 @@
     }, { passive: true });
   })();
 
+  // ===== CV クリック計測（GA4 イベント送信） =====
+  document.addEventListener("click", (e) => {
+    const cv = e.target.closest("[data-cv]");
+    if (!cv || typeof window.gtag !== "function") return;
+    window.gtag("event", "cv_click", {
+      cv_id: cv.dataset.cv,
+      link_url: cv.href || "",
+    });
+  });
+
   // ===== 滑らかなスクロールはCSS scroll-behavior に統一（JS削除） =====
 
   // ===== VISITOR COUNTER（訪問者カウンター） =====
